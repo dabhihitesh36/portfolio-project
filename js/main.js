@@ -9,8 +9,8 @@ const projects = [
   },
   {
     title: "Guess My Number Game",
-    description:
-      "A concept design and front-end implementation for an e-commerce platform. Focused on a clean UI, responsive product grids, and a streamlined checkout process using modern CSS techniques.",
+    description: `A simple JavaScript project that lets users play the classic "Guess My Number" game. The project is designed to showcase fundamental JavaScript concepts, providing a great starting point for beginners to explore and understand basic programming logic and interactivity on the web.`,
+
     imageUrl: "./images/project-1.png",
     liveUrl: "https://dabhisguessmynumber.netlify.app/",
     codeUrl: "https://github.com/dabhihitesh36/Guess-My-Number",
@@ -18,31 +18,28 @@ const projects = [
   {
     title: "Pig-Game",
     description:
-      "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
+      "I developed this Pig-Game Project using html, css, javascript during javascript learning. In this project i learn lots of fundamentals of javascript like how to generate random number using Math.random() Method, if else conditional statements, and adding event on buttton onClick.",
     imageUrl: "./images/project-2.png",
     liveUrl: "https://dabhispiggame.netlify.app/",
     codeUrl: "https://github.com/dabhihitesh36/Pig-game",
   },
   {
     title: "Model-Window",
-    description:
-      "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
+    description: "simple open and close model window.",
     imageUrl: "./images/project-3.png",
     liveUrl: "https://dabhismodelwindow.netlify.app/",
     codeUrl: "https://github.com/dabhihitesh36/Model-Window",
   },
   {
     title: "Spotify-Clone",
-    description:
-      "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
+    description: "",
     imageUrl: "./images/project-4.jpg",
     liveUrl: "https://dabhisspotifyclone.netlify.app/",
     codeUrl: "https://github.com/dabhihitesh36/spotifyclone",
   },
   {
     title: "Second-Portfolio-Project",
-    description:
-      "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
+    description: "",
     imageUrl: "./images/project-5.jpg",
     liveUrl: "https://dabhihitesh.prafulchauhan.com/",
     codeUrl: "https://github.com/dabhihitesh36/Portfolio",

@@ -214,6 +214,15 @@ header nav ul li a:hover {
   background-color: rgba(93, 101, 218, 0.562);
 }
 
+#qualification {
+  padding: calc(var(--spacing-unit) * 4) 0;
+  background-color: var(--background-color);
+}
+
+#qualification h2 {
+  text-align: center;
+}
+
 #projects {
   padding: calc(var(--spacing-unit) * 4) 0;
   background-color: var(--background-color);
