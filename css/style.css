@@ -111,6 +111,11 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+/* #hero > img {
+  mix-blend-mode: multiply;
+  background-color: transparent;
+} */
+
 #hero h1 {
   font-size: 3.5rem;
   font-weight: var(--font-weight-bold);
