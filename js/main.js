@@ -46,8 +46,8 @@ const projects = [
   },
 ];
 
-const themeToggle = document.querySelector("#theme-toggle");
-const htmlElement = document.documentElement;
+// const themeToggle = document.querySelector("#theme-toggle");
+// const htmlElement = document.documentElement;
 const projectsContainer = document.querySelector(".projects-container");
 
 const renderProjects = () => {
@@ -96,12 +96,34 @@ const renderProjects = () => {
 
 // renderProjects();
 
-themeToggle.addEventListener("click", () => {
-  const newTheme = themeToggle.checked ? "dark" : "light";
+// themeToggle.addEventListener("click", () => {
+//   const newTheme = themeToggle.checked ? "dark" : "light";
+//   htmlElement.setAttribute("data-theme", newTheme);
+//   localStorage.setItem("theme", newTheme);
+// });
+
+// (() => {
+//   const savedTheme = localStorage.getItem("theme");
+
+//   if (savedTheme) {
+//     htmlElement.setAttribute("data-theme", savedTheme);
+
+//     if (savedTheme === "dark") {
+//       themeToggle.checked = true;
+//     }
+//   }
+// })();
+
+const themeToggleCheckbox = document.getElementById("toggle");
+const htmlElement = document.documentElement; // <html> element
+
+themeToggleCheckbox.addEventListener("change", () => {
+  const newTheme = themeToggleCheckbox.checked ? "dark" : "light";
   htmlElement.setAttribute("data-theme", newTheme);
   localStorage.setItem("theme", newTheme);
 });
 
+// Immediately check saved theme on page load
 (() => {
   const savedTheme = localStorage.getItem("theme");
 
@@ -109,7 +131,7 @@ themeToggle.addEventListener("click", () => {
     htmlElement.setAttribute("data-theme", savedTheme);
 
     if (savedTheme === "dark") {
-      themeToggle.checked = true;
+      themeToggleCheckbox.checked = true;
     }
   }
 })();
