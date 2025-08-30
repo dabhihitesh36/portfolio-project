@@ -27,6 +27,7 @@ body {
   --font-size-base: 1rem;
   --line-height-base: 1.5;
   --font-weight-normal: 400;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
   --spacing-unit: 1rem;
   --container-width: 1140px;
@@ -358,6 +359,47 @@ header nav ul li a:hover {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+#form-status {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#form-status.success {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+#form-status.error {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+html[data-theme="dark"] #form-status.success {
+  background-color: #0f5132;
+  color: #d1e7dd;
+  border-color: #146c43;
+}
+
+html[data-theme="dark"] #form-status.error {
+  background-color: #842029;
+  color: #f8d7da;
+  border-color: #9b2a34;
 }
 
 #contact button[type="submit"] {
